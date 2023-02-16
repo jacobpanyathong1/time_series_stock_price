@@ -16,7 +16,7 @@ import requests
 
 
 #url for json data
-url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=AAPL&apikey={apipasscode}'
+url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=AAPL&&outputsize=full&apikey={apipasscode}'
 #Extracting JSON data
 r = requests.get(url)
 #Getting the JSON reponse data
@@ -31,11 +31,11 @@ def get_apple_data():
     Acquire JSON data from URL and return DataFrame of AAPL data.
     '''
     #Complete JSON data of AAPL 
-    data = data['Time Series (Daily)']
+    aapl = data['Time Series (Daily)']
     #Values only of AAPL 
-    data_values= data.values()
+    data_values= aapl.values()
     #Creating DataFrame of data 
-    df=pd.DataFrame(data_values, index = data.keys())
+    df=pd.DataFrame(data_values, index = aapl.keys())
     #Establishing Datetime index for DataFrame
     df.index = pd.to_datetime(df.index)
     #Setting index for DataFrame
