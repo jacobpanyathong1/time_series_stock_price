@@ -1,7 +1,7 @@
-# Time Series: AAPL Stock
+# Anomaly Detection : Codeup Curriculum log Dataset
 
 ## Project Description
-Data Scientist using the Apple (AAPL) stock price data set to develop a machine learning model that will help to predict the price of stocks. 
+Data Scientists using the Codeup Curriculum Log dataset to explore the SQL Query that will help to detect anomoalies. 
 
 ## Project Goals
 
