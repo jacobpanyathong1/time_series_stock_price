@@ -1,7 +1,6 @@
-# Anomaly Detection : Codeup Curriculum log Dataset
+# Time Series
 
 ## Project Description
-Data Scientists using the Codeup Curriculum Log dataset to explore the SQL Query that will help to detect anomoalies. 
 
 ## Project Goals
 
